@@ -24,3 +24,9 @@ Then open `http://127.0.0.1:4173/`.
 The page uses the included poster, reference video, wordmark and Shop product renders. Fonts and five material-study images are loaded from their existing public URLs in `index.html`.
 
 This repository is a public prototype. Image, video, font, and model rights should be confirmed before redistribution or commercial use.
+
+## Reusable Agent Skill
+
+The reusable skill is in [`skills/lush-fashion-interaction-website`](skills/lush-fashion-interaction-website/). It contains the implementation constraints, a copy-ready prompt for agents without Skill support, and an acceptance checklist.
+
+The folder name is lowercase for agent discovery; the UI-facing skill name is `LUSH服装交互网站`.
