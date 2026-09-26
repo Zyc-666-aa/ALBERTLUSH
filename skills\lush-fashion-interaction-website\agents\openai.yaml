@@ -1,0 +1,8 @@
+interface:
+  display_name: "LUSH服装交互网站"
+  short_description: "构建滚动视频驱动的 Lush 服装交互网站"
+  brand_color: "#24363F"
+  default_prompt: "Use $lush-fashion-interaction-website to build the Lush/Orla scroll-driven fashion site from the supplied assets and brief."
+
+policy:
+  allow_implicit_invocation: true
