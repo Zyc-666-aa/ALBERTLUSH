@@ -20,7 +20,7 @@ Use this skill for a fashion presentation site where scrolling controls a model 
 - Prefer a standalone HTML prototype or the host framework already present in the target project.
 - Use one continuous, scroll-linked video stage. Do not insert a hard cut between poses or garments.
 - Keep the timeline at ten seconds or less. Use one requestAnimationFrame loop, scroll-to-progress smoothing, and cancellation-safe media seeking.
-- Separate source cadence from display cadence: a 24 fps source must not be falsely described as a native 60 fps render. Use 60 Hz RAF interpolation where supported and report the source and display behavior separately.
+- Separate source cadence from display cadence: a 24 fps source must not be falsely described as a native 60 fps render. Use requestAnimationFrame to schedule scroll sampling, media seeking, and UI paint updates when supported; this can improve input-to-paint continuity but cannot create video frames or raise the source frame rate. Report source cadence, seek policy, repeated frames, and measured paint evidence separately.
 - Keep the fixed Lush wordmark above the hero but fade it before Shop cards enter the viewport; disable pointer capture after it fades.
 - Make the Hero `See the collection` CTA a transparent button with a one pixel `var(--ink)` dark green outline and a restrained hover fill.
 - Include bilingual editorial copy with English as the primary line and smaller Chinese support text.
